@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^12.5.0",
+    "razorpay": "^2.9.4"
+  }
+}
