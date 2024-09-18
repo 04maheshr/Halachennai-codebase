@@ -26,8 +26,8 @@ Provide clear instructions on how to install and set up your project. Include an
     npm install for both frontend and backend and Halachennai-codebase
 
     ```
-   4. Run File
-      ''' bash
+4. Run File
+       ```bash
       cd to-Halachennai-codebase
       & npm start
-      '''
+       ```
