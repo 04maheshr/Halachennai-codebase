@@ -1,10 +1,10 @@
 var admin = require("firebase-admin");
-
+require('dotenv').config();
 var serviceAccount = require("../env/firebase servicekey.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://halachennai-ecd86-default-rtdb.firebaseio.com"
+  databaseURL: process.env.FIREBASE_DATABASE_URL
 });
 const db = admin.firestore();
 db.collection('users').get()

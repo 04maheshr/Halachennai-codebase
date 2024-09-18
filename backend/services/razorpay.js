@@ -1,13 +1,14 @@
+require('dotenv').config({ path: './env/.env' });
 const Razorpay = require('razorpay');
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_cpMZ5WyKsUNW88', // Replace with your Razorpay Test Key ID
-  key_secret: '7lkEfakxLQizuzkpUQPbBuoJ' // Replace with your Razorpay Secret Key
+  key_id: process.env.RAZORPAY_KEY_ID, 
+  key_secret: process.env.RAZORPAY_KEY_SECRET 
 });
 
 const createOrder = async (amount) => {
   try {
-    if (amount < 100) { // 
+    if (amount < 100) { 
       throw new Error('Order amount less than minimum amount allowed');
     }
 

@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "client": "cd HalaChennai_Frontend-master && npm start",
+    "client": "cd frontend && npm start",
     "server": "cd backend && npm start"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
   }
 }
-
