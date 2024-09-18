@@ -17,7 +17,7 @@ Provide clear instructions on how to install and set up your project. Include an
     &
     cd frontend
     &
-    cd Halachennai-codebase.git
+    cd Halachennai-codebase.git for all these run npm install
     ```
 
 3. Install dependencies:
